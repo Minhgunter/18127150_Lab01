@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        
+        .centered {
+            position: absolute;
+            top:50% ;
+            left:50% ;
+            transform: translate(-50%, -50%);
+        }
+        .top {
+            position: absolute;
+            top:25% ;
+            left:50% ;
+            transform: translate(-50%, -50%);
+        }
+        .bottom {
+            position: absolute;
+            top:75% ;
+            left:50% ;
+            transform: translate(-50%, -50%);
+        }
+
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .button1 {
+            background-color: #004dba;
+            border-radius: 12px;} 
+        .button1:hover {
+            background-color: #008CBA;
+            border-radius: 12px;
+        }
+        .button2 {
+            background-color: #001128;
+            border-radius: 12px;} 
+        .button2:hover {
+            background-color: #747474;
+            border-radius: 12px;
+        }
+        .button3 {
+            background-color: #ffffff; color: black;
+            border-radius: 12px;
+        } 
+        .button3:hover {
+            background-color: #3d3d3d;
+            color: whitesmoke; 
+            border-radius: 12px;
+        }
+        .parallax {
+            /* The image used */
+            background-image: url("bg-callout.jpg");
+            
+            /* Set a specific height */
+            min-height: 500px;
+            
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="bg-masthead.jpg" style="width:100%; margin-top: auto; margin-bottom: auto;">
+        <div class="centered" style="color:SlateBlue;">
+            <h1 style="font-size:500%; font-family: Arial, Helvetica, sans-serif;">Stylish Portfolio</h1>
+            <i style="font-size:200%; font-family: Arial, Helvetica, sans-serif;">A Free BootStrap Theme by Start BootStrap</i>
+            
+        </div>
+        <div class="bottom">
+            <button class="button button1" onclick="alert('Hello world!')">Find out more</button>
+        </div>
+    </div>
+    
+    <div class="container" style="height: 500px;">
+        <div class="centered" style="color:Blue;">
+            <h1 style="font-size:200%; font-family: Arial, Helvetica, sans-serif;">Stylish Portfolio is the perfect theme for your next project!</h1>
+            <h2 style="font-size:100%; font-family: Arial, Helvetica, sans-serif;">This theme features a flexible, UX friendly sidebar menu and stock photo from our friends at Unsplash!</h2>
+            <button class="button button1" onclick="alert('Hello world!')">Find out more</button>
+            
+        </div>
+    </div>
+
+    <div class="container" style="height: 500px; background-color: #008CBA;">
+        <div class="top">
+            <h1 style="font-size:100%; color: rgb(255, 165, 29); font-family: Arial, Helvetica, sans-serif;">SERVICE</h1>
+            <h2 style="font-size:200%; font-family: Arial, Helvetica, sans-serif;">What we offer</h2>
+            
+        </div>
+    </div>
+
+    <!-- Container element -->
+    <div class="parallax"></div>
+
+    <div class="container" style="height: 300px; background-color: #008CBA; font-size:100%; font-family: Arial, Helvetica, sans-serif;">
+        <div class="centered">
+            <h1>
+                <i>The buttons below are impossible to resist...</i>
+            </h1>
+            <button class="button button3">Click Me!</button>
+            <button class="button button2">Look at Me!</button>
+        </div>
+    </div>
+
+     <!-- Map -->
+    <div class="container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6307047611904!2d106.67998301526985!3d10.762918262384774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1c06f4e1dd%3A0x43900f1d4539a3d!2sUniversity%20of%20Science%20-%20VNUHCM!5e0!3m2!1sen!2s!4v1653987245246!5m2!1sen!2s" 
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Social -->
+    <div class="container" style="height: 300px;">
+        <div class="centered">
+            <button type="button " style="border-radius: 50%;">
+                <img src="fb_icon.png" style=" height: 100px; width: 100px; border-radius: 50%;">
+            </button>
+            <button type="button " style="border-radius: 50%;">
+                <img src="Twitter_icon.png" style="height: 100px; width: 100px; border-radius: 50%;">
+            </button>
+            <button type="button " style="border-radius: 50%;">
+                <img src="git_icon.png" style="height: 100px; width: 100px; border-radius: 50%; ">
+            </button>
+        </div>
+    </div>
+</body>
+</html>
