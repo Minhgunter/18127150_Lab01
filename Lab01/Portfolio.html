@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create two equal columns that sits next to each other */
+        .column {
+            flex: 50%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }       
         .container {
             position: relative;
             text-align: center;
@@ -80,6 +98,40 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        .btn {
+            border: none; /* Remove borders */
+            font-size: 30px;
+            cursor: pointer; /* Mouse pointer on hover */
+            border-radius: 50%;
+        }
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -108,20 +160,38 @@
         <div class="top">
             <h1 style="font-size:100%; color: rgb(255, 165, 29); font-family: Arial, Helvetica, sans-serif;">SERVICE</h1>
             <h2 style="font-size:200%; font-family: Arial, Helvetica, sans-serif;">What we offer</h2>
-            
+
         </div>
     </div>
 
-    <!-- Container element -->
+    <!-- Parallax element -->
     <div class="parallax"></div>
+
+    <!-- 4 images element -->
+    <div class="container" style="height: 1000px">
+        <div class="top">
+            <h1 style="font-size:100%; color: rgb(255, 165, 29); font-family: Arial, Helvetica, sans-serif;">Portfolio</h1>
+            <h2 style="font-size:200%; font-family: Arial, Helvetica, sans-serif;">Recent projects</h2>
+        </div>
+        <div class="row"> 
+            <div class="column">
+                <img src="portfolio-1.jpg" style="width:500px">
+                <img src="portfolio-2.jpg" style="width:500px">
+            </div>
+            <div class="column">
+                <img src="portfolio-3.jpg" style="width: 500px;">
+                <img src="portfolio-4.jpg" style="width:500px">
+            </div>
+        </div>
+    </div>
 
     <div class="container" style="height: 300px; background-color: #008CBA; font-size:100%; font-family: Arial, Helvetica, sans-serif;">
         <div class="centered">
             <h1>
                 <i>The buttons below are impossible to resist...</i>
             </h1>
-            <button class="button button3">Click Me!</button>
-            <button class="button button2">Look at Me!</button>
+            <button class="button button3" onclick="alert('Clicked!')">Click Me!</button>
+            <button class="button button2" onclick="alert('Clicked!')">Look at Me!</button>
         </div>
     </div>
 
@@ -134,15 +204,9 @@
     <!-- Social -->
     <div class="container" style="height: 300px;">
         <div class="centered">
-            <button type="button " style="border-radius: 50%;">
-                <img src="fb_icon.png" style=" height: 100px; width: 100px; border-radius: 50%;">
-            </button>
-            <button type="button " style="border-radius: 50%;">
-                <img src="Twitter_icon.png" style="height: 100px; width: 100px; border-radius: 50%;">
-            </button>
-            <button type="button " style="border-radius: 50%;">
-                <img src="git_icon.png" style="height: 100px; width: 100px; border-radius: 50%; ">
-            </button>
+            <button class="btn"><a class="fa fa-facebook" href="https://www.facebook.com/"></a></button>
+            <button class="btn"><a class="fa fa-twitter" href="https://www.twitter.com/"></a></button>
+            <button class="btn"><a class="fa fa-google" href="https://www.google.com/"></a></button>
         </div>
     </div>
 </body>
